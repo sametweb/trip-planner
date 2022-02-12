@@ -1,0 +1,33 @@
+.expenseItem {
+  padding: 5px 5px 10px 5px;
+  border-bottom: 1px dashed #f1f1f1;
+}
+
+.expenseItem:last-child {
+  border-bottom: none;
+}
+
+.expenseItem:hover {
+  background-color: #f1f1f1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.title {
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.amount {
+  font-size: 16px;
+}
+
+.metadata {
+  font-size: 10px;
+}

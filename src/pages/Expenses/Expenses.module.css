@@ -1,0 +1,19 @@
+.header {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.expenses {
+  border-bottom: 2px solid black;
+}

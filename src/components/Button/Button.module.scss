@@ -1,0 +1,105 @@
+$success: #28a745;
+$danger: #a72828;
+$info: #17a2b8;
+$warning: #ffc107;
+
+* {
+  transition: background-color 0.3s;
+}
+
+.buttonBase {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  &.bordered {
+    background-color: transparent;
+    color: black;
+  }
+}
+.sm {
+  padding: 0.3rem 0.8rem;
+  font-size: 1.3rem;
+}
+.md {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+.lg {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.7rem;
+}
+.bordered {
+  border-width: 1px;
+  border-style: solid;
+}
+.success {
+  border-color: $success;
+  background-color: $success;
+  &:hover {
+    background-color: lighten($success, 10);
+  }
+  &.bordered {
+    background-color: transparent;
+    color: $success;
+    &:hover {
+      background-color: rgba($success, 0.1);
+    }
+  }
+}.danger {
+  border-color: $danger;
+  background-color: $danger;
+  &:hover {
+    background-color: lighten($danger, 10);
+  }
+  &.bordered {
+    background-color: transparent;
+    color: $danger;
+    &:hover {
+      background-color: rgba($danger, 0.1);
+    }
+  }
+}
+.warning {
+  border-color: $warning;
+  background-color: $warning;
+  &:hover {
+    background-color: lighten($warning, 10);
+  }
+  &.bordered {
+    background-color: transparent;
+    color: $warning;
+    &:hover {
+      background-color: rgba($warning, 0.1);
+    }
+  }
+}
+.info {
+  border-color:$info;
+  background-color: $info;
+  &:hover {
+    background-color: lighten($info, 10);
+  }
+  &.bordered {
+    background-color: transparent;
+    color: $info;
+    &:hover {
+      background-color: rgba($info, 0.1);
+    }
+  }
+}
+.default {
+  border-color: black;
+  background-color: black;
+  &:hover {
+    background-color: lighten(black, 10);
+  }
+  &.bordered {
+    background-color: transparent;
+    color: black;
+    &:hover {
+      background-color: rgba(black, 0.1);
+    }
+  }
+}

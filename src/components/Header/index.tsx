@@ -16,7 +16,7 @@ const Header: React.FC<Props> = () => {
         </a>
       </ul>
       <div className={styles.auth}>
-        <Button title="Login" className={styles.loginButton} />
+        <Button title="Login" size="lg" />
       </div>
     </div>
   );

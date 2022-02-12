@@ -33,7 +33,7 @@ const Expenses = () => {
     <div>
       <h2 className={styles.header}>
         <span>Expenses</span>
-        <Button title="+ Add" />
+        <Button title="+ Add" role="info" />
       </h2>
       <h3 className={styles.subHeader}>
         <span>Total Expenses</span>

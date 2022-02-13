@@ -1,0 +1,30 @@
+.tripsTable {
+  table-layout: fixed;
+  border-bottom: 2px solid black;
+}
+
+.headerCell {
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.nameCol, .userCol, .costCol {
+  font-weight: normal;
+  font-size: 2.1rem;
+}
+
+.nameCol {
+  width: 100%;
+}
+.userCol {
+  width: 100%;
+  white-space: nowrap;
+  padding-right: 10rem;
+}
+.costCol {
+  white-space: nowrap;
+  min-width: 1px;
+}

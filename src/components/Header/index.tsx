@@ -1,4 +1,5 @@
 import Button from "components/Button";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
 interface Props {}
@@ -8,12 +9,12 @@ const Header: React.FC<Props> = () => {
     <div className={styles.header}>
       <h1 className={styles.logo}>Trip Planner</h1>
       <ul className={styles.nav}>
-        <a href="#" className={styles.navItem}>
+        <Link to="/" className={styles.navItem}>
           <li>Home</li>
-        </a>
-        <a href="#" className={styles.navItem}>
+        </Link>
+        <Link to="/trips" className={styles.navItem}>
           <li>My Trips</li>
-        </a>
+        </Link>
       </ul>
       <div className={styles.auth}>
         <Button title="Login" size="lg" />

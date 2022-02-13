@@ -1,3 +1,7 @@
+* {
+  transition: background-color 0.3s;
+}
+
 html {
   font-family: Inter;
   font-size: 62.5%;
@@ -9,8 +13,16 @@ h3,
 h4,
 h5,
 h6,
-button {
+button, thead {
   font-family: Oswald;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .app-root {

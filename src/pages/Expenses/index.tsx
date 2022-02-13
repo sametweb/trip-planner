@@ -1,10 +1,11 @@
 import Button from "components/Button";
 import ExpenseItem from "components/ExpenseItem";
+import PageHeader from "components/PageHeader";
 import type { Expense } from "types/expense";
 import currency from "utils/currency";
 import styles from "./Expenses.module.css";
 
-const expenses: Expense[] = [
+export const expenses: Expense[] = [
   {
     id: 1,
     title: "Groceries",
@@ -31,10 +32,10 @@ const Expenses = () => {
 
   return (
     <div>
-      <h2 className={styles.header}>
-        <span>Expenses</span>
+      <PageHeader>
+        <h2>Expenses</h2>
         <Button title="+ Add" role="info" />
-      </h2>
+      </PageHeader>
       <h3 className={styles.subHeader}>
         <span>Total Expenses</span>
         <span>{currency(totalExpenses)}</span>

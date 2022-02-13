@@ -1,6 +1,6 @@
 .expenseItem {
   padding: 0.5rem 0.5rem 1rem 0.5rem;
-  border-bottom: 1px dashed #f1f1f1;
+  border-bottom: 1px dashed #e1e1e1;
 }
 
 .expenseItem:last-child {

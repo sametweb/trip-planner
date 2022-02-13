@@ -1,0 +1,28 @@
+.tripItem {
+  border-bottom: 1px dashed #e1e1e1;
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.users {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.cost {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 1rem 1rem 0;
+}

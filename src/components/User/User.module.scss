@@ -1,23 +1,35 @@
 .user {
   display: inline-block;
-  margin-right: 0.5rem;
   .label {
     display: flex;
     align-items: center;
-    border: 1px solid #e9e9e9;
-    background-color: #f1f1f1;
-    border-radius: 2.2rem;
-    padding-right: 1rem;
     .avatar {
       width: 2.2rem;
       height: 2.2rem;
       border-radius: 50%;
-      margin-right: .5rem;
       overflow: hidden;
+      border: 1px solid #e1e1e1;
     }
     .username {
       font-size: 1.2rem;
       font-weight: 300;
+      padding: 0 0.5rem;
     }
   }
+  &.large {
+    .label {
+      .avatar {
+        width: 3.3rem;
+        height: 3.3rem;
+      }
+      .username {
+        font-size: 1.5rem;
+        padding: 0 0.7rem;
+      }
+    }
+  }
+}
+
+.stacked {
+  margin-right: -.5rem;
 }

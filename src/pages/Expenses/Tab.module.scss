@@ -1,0 +1,14 @@
+.activeTabIndicator {
+  width: 10px;
+  height: 10px;
+  background: #e1e1e1;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  visibility: hidden;
+  &.active {
+    visibility: visible;
+    background: black;
+  }
+}

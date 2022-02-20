@@ -1,7 +1,10 @@
+import { users } from "components/TripUsers";
+import User from "components/User";
 import React from "react";
 import { Expense } from "types/expense";
 import currency from "utils/currency";
 import styles from "./ExpenseItem.module.css";
+import { User as UserType } from 'types/user';
 
 interface Props {
   expense: Expense;
@@ -9,6 +12,7 @@ interface Props {
 
 const ExpenseItem: React.FC<Props> = (props) => {
   const { expense } = props;
+  const user: UserType = users.find(user => user.id === expense.userId) as UserType;
 
   return (
     <div className={styles.expenseItem}>
@@ -18,9 +22,9 @@ const ExpenseItem: React.FC<Props> = (props) => {
           <span className={styles.amount}>{currency(expense.amount)}</span>
         </h4>
       </div>
-      <p className={styles.metadata}>
-        {expense.userId} on {expense.date.toLocaleDateString()}
-      </p>
+      <div className={styles.metadata}>
+        <User user={user} /> on {expense.date.toLocaleDateString()}
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { trips } from "pages/Trips";
 import type { Trip } from "types/trip";
 import type { User as UserType } from "types/user";
 
-const users: UserType[] = [
+export const users: UserType[] = [
   {
     id: 1,
     username: 'Samet',
@@ -52,7 +52,7 @@ const TripUsers: React.FC<Props> = (props) => {
 
   const tripUsers = users.filter(user => trip?.users.includes(user.id));
 
-  return <>{tripUsers.map(user => <User user={user} />)}</>
+  return <>{tripUsers.map(user => <User key={user.id} user={user} avatarOnly />)}</>
 }
 
 export default TripUsers;

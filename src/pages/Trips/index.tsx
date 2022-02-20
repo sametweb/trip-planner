@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Button from "components/Button";
 import PageHeader from "components/PageHeader";
 import TripItem from "components/TripItem";
@@ -20,6 +21,7 @@ export const trips: Trip[] = [
 interface Props {}
 
 const Trips: React.FC<Props> = (props) => {
+  const headerCellClassName = classNames(styles.headerCell, styles.nameCol);
   return (
     <>
       <PageHeader>
@@ -29,13 +31,13 @@ const Trips: React.FC<Props> = (props) => {
       <table className={styles.tripsTable}>
         <thead>
           <tr>
-            <th className={[styles.headerCell, styles.nameCol].join(" ")}>
+            <th className={classNames(styles.headerCell, styles.nameCol)}>
               Trip Name
             </th>
-            <th className={[styles.headerCell, styles.userCol].join(" ")}>
+            <th className={classNames(styles.headerCell, styles.userCol)}>
               Who Attended?
             </th>
-            <th className={[styles.headerCell, styles.costCol].join(" ")}>
+            <th className={classNames(styles.headerCell, styles.costCol)}>
               Total Cost
             </th>
           </tr>

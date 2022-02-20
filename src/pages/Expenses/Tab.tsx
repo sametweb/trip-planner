@@ -1,8 +1,7 @@
 import classNames from "classnames";
-import { ComponentProps } from "react";
 import styles from './Tab.module.scss';
 
-interface Props extends ComponentProps<"span"> {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
   isActive: boolean;
 }
@@ -15,10 +14,10 @@ const Tab: React.FC<Props> = (props) => {
   });
 
   return (
-    <span {...theRest}>
+    <div {...theRest}>
       <div className={indicatorClassName} />
       {name}
-    </span>
+    </div>
   );
 };
 

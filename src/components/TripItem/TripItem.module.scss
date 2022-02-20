@@ -6,23 +6,26 @@
   &:hover {
     background-color: #f1f1f1;
   }
+}
 
+.cell {
+  vertical-align: middle;
+  padding: 1rem 1rem 1rem 0;
+  &:first-child {
+    padding: 1rem;
+  }
 }
 
 .name {
   font-size: 1.6rem;
-  font-weight: bold;
-  padding: 1rem;
+  font-weight: 300;
+  vertical-align: middle;
 }
 
 .users {
   font-size: 1.4rem;
-  line-height: 2.2rem;
-  padding: 1rem 1rem 1rem 0;
 }
 
 .cost {
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 1rem 1rem 1rem 0;
+  font-size: 2rem;
 }

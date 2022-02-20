@@ -8,17 +8,22 @@ interface Props {
   tabName: TabItem;
 }
 
-const ByUser: React.FC<Props> = props => {
+
+const ByUser: React.FC<Props> = (props) => {
   const { userExpenses, activeTab, tabName } = props;
 
   if (activeTab !== tabName) return null;
 
-  return <>{userExpenses.map(({ user, amountSpent }) => (
-    <div className={styles.attendeeItem}>
-      <User key={user.id} user={user} large />
-      <h4 className={styles.amountSpent}>{amountSpent}</h4>
-    </div>
-  ))}</>;
-}
+  return (
+    <>
+      {userExpenses.map(({ user, amountSpent }) => (
+        <div className={styles.attendeeItem}>
+          <User key={user.id} user={user} large />
+          <h4 className={styles.amountSpent}>{amountSpent}</h4>
+        </div>
+      ))}
+    </>
+  );
+};
 
 export default ByUser;

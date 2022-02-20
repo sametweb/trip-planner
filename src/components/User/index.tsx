@@ -20,8 +20,6 @@ const User: React.FC<Props> = (props) => {
     [styles.stacked]: avatarOnly,
     [styles.large]: large,
   });
-  
-  // avatarOnly ? styles.user + " " + styles.stacked : styles.user;
 
   return (
     <div className={className}>
